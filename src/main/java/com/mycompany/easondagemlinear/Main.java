@@ -30,6 +30,9 @@ package com.mycompany.easondagemlinear;
         // Exibindo os índices onde as chaves foram encontradas
         System.out.println("Chave 10 encontrada no índice: " + indiceChave10);
         System.out.println("Chave 15 encontrada no índice: " + indiceChave15);
+        
+        tabela.THEA_remover(10);
+        tabela.mostrarTabela();
     }
 }
 

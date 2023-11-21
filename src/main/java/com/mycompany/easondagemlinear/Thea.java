@@ -61,6 +61,15 @@ public class Thea {
         return -1; // Retorna -1 se a chave não for encontrada
     }
     
+    public void THEA_remover(int chave) {
+    int posicao = THEA_Buscar(chave);
+
+    if (posicao != -1) {
+        tabelaHash[posicao].estado = Estado.E_APAGADO;
+    }
+}
+
+    
     public void mostrarTabela() {
         for (int i = 0; i < tam; i++) {
             if (tabelaHash[i].estado == Estado.E_OCUPADO) {
